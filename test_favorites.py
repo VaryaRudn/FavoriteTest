@@ -18,7 +18,7 @@ def test_all_correct(auth_token):
     for i in test_colors:
         fresh_token = requests.post("https://regions-test.2gis.com/v1/auth/tokens").cookies.get('token')
         data = {
-            "title": "Парк",
+            "title": "favorite парк №1",
             "lat": 55.7558,
             "lon": 37.6173,
             "color": i
